@@ -4,7 +4,7 @@
   "description": "",
   "main": "hello.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --runTestsByPath ./node_modules/@jworkman-fs/asl/__tests__/contacts.spec.js --testPathIgnorePatterns=/nothing/"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +12,9 @@
   "type": "commonjs",
   "dependencies": {
     "@jworkman-fs/asl": "^1.2.43",
-    "express": "^5.2.1"
+    "axios": "^1.18.0",
+    "express": "^5.2.1",
+    "slugify": "^1.6.9"
   },
   "devDependencies": {
     "jest": "^30.4.2",
